@@ -31,7 +31,7 @@ Include within your I<Rexfile>
 
         task prepare => sub {
                 file "example_file",
-                content => mustache("template",
+                content => template('template.mustache',
                 {
                         var1  => $var1,
                         arr1  => \@arr1,
