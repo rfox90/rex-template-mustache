@@ -19,13 +19,12 @@ sub import {
 }
 1;
 __END__
-# Below is stub documentation for your module. You'd better edit it!
 
-=head1 NAME
+=head2 NAME
 
 Rex::Template::Mustache - Use Text::Caml with Rex
 
-=head1 SYNOPSIS
+=head2 SYNOPSIS
 Include within your I<Rexfile>
 
 use Rex::Template::Mustache 	
@@ -43,15 +42,15 @@ task prepare => sub {
  };
 }
 
-=head1 SEE ALSO
+=head2 SEE ALSO
 
 See L<Rex::Template::TT> for the inspiration for this.
 
-=head1 AUTHOR
+=head2 AUTHOR
 
 Richard Fox, E<lt>richard.fox@ahref.co.uk<gt>
 
-=head1 COPYRIGHT AND LICENSE
+=head2 COPYRIGHT AND LICENSE
 
 Copyright (C) 2014 by Richard Fox
 
