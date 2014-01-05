@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Rex-Template-Mustache.t
+lib/Rex/Template/Mustache.pm
