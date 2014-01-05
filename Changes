@@ -1,6 +1,0 @@
-Revision history for Perl extension Rex::Template::Mustache.
-
-0.01  Sun Jan  5 18:42:04 2014
-	- original version; created by h2xs 1.23 with options
-		-AXc -n Rex::Template::Mustache
-

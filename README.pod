@@ -1,26 +1,3 @@
-package Rex::Template::Mustache;
-
-use strict;
-use warnings;
-
-our $VERSION = "0.1";
-
-use Text::Caml;
-
-use Rex -base;
-
-sub import {
-	set template_function => sub {
-		my ($content, $vars) = @_;
-		my $caml = Text::Caml->new();
-
-		return $caml->render($content,$vars);
-	}
-}
-1;
-__END__
-# Below is stub documentation for your module. You'd better edit it!
-
 =head1 NAME
 
 Rex::Template::Mustache - Use Text::Caml with Rex

@@ -8,5 +8,6 @@ WriteMakefile(
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/Rex/Template/Mustache.pm', # retrieve abstract from module
-       AUTHOR         => 'A. U. Thor <rich@>') : ()),
+       AUTHOR         => 'Richard Fox <richard.fox@ahref.co.uk>') : ()),
+    LICENSE => 'Apache License 2.0'
 );
