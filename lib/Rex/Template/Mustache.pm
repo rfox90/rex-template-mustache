@@ -27,20 +27,17 @@ Rex::Template::Mustache - Use Text::Caml with Rex
 =head2 SYNOPSIS
 Include within your I<Rexfile>
 
-use Rex::Template::Mustache 	
+        use Rex::Template::Mustache
 
-task prepare => sub {
-	file "example_file",
-		content => mustache("template"),
-			{ 
-				var1  => $var1,
-                arr1  => \@arr1,
-                hash1 => \%hash1,
-            }
+        task prepare => sub {
+                file "example_file",
+                content => mustache("template",
+                {
+                        var1  => $var1,
+                        arr1  => \@arr1,
+                        hash1 => \%hash1,
+                });
         );
-                       
- };
-}
 
 =head2 SEE ALSO
 

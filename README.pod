@@ -6,28 +6,25 @@ Rex::Template::Mustache - Use Text::Caml with Rex
 
 Include within your I<Rexfile>
 
-use Rex::Template::Mustache 	
+	use Rex::Template::Mustache 	
 
-task prepare => sub {
-	file "example_file",
+	task prepare => sub {
+		file "example_file",
 		content => mustache("template"),
-			{ 
-				var1  => $var1,
-                arr1  => \@arr1,
-                hash1 => \%hash1,
-            }
+		{ 
+			var1  => $var1,
+			arr1  => \@arr1,
+			hash1 => \%hash1,
+            	});
         );
                        
- };
-}
-
 =head2 SEE ALSO
 
 See L<Rex::Template::TT> for the inspiration for this.
 
 =head2 AUTHOR
 
-Richard Fox, E<lt>richard.fox@ahref.co.uk<gt>
+Richard Fox, richard.fox@ahref.co.uk
 
 =head2 COPYRIGHT AND LICENSE
 
